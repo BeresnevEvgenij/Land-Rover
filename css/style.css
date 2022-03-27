@@ -17,7 +17,7 @@ body, html{
 .top-line{
   width: 100%;
   position: absolute;
-  height: 63px;
+  height: 80px;
   top: 0;
   border-bottom:  1px solid rgb(255, 255, 255, 0.1);
   z-index: 10px;
@@ -32,6 +32,9 @@ body, html{
 .logo img{
   height: 70px;
   width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo_text{
   color: #fff;
@@ -45,17 +48,39 @@ letter-spacing: .5em;
 }
 .top-line_decoration{
   padding: 0px 50px;
+  flex: 1 0 0 0;
 }
 .top-line_decoration-conteiner{
   display: flex;
 }
 .menu-button-container{
+  display: flex;
   margin-left: 200px;
+  height: 80px;
+  width: 80px;
+  background-color: #3c3c3c;
+  position: relative;
 }
-
-
-
-
+.menu-button{
+  margin: auto;
+}
+.menu-button-container:hover{
+  background: #f57500;
+  transition: background .25s ease-out;
+}
+.logo:hover{
+  color: #fff:
+}
+.top-line_decoration::before{
+  content: '';
+  height: 1px;
+  width: 50px;
+  background-color: #fff;
+  display: inline-block;
+  opacity: .5;
+  position: relative;
+  top: -4px;
+}
 
 
 
